@@ -29,7 +29,7 @@ export default function CarDetails() {
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 seconds timeout
 
-                const apiUrl = `https://cors-anywhere.herokuapp.com/https://car.itqan.win/fetch-car-data?chassisNo=${vin}`;
+                const apiUrl = `https://car.itqan.win/fetch-car-data?chassisNo=${vin}`;
                 console.log("Fetching car data:", apiUrl);
 
                 const response = await fetch(apiUrl, {
